@@ -1,4 +1,4 @@
-**_api_** - used for dependencies that are exposed to external modules (transitive dependency). As the dependency is exposed to external modules, change would be a significant re-compiling effort as everyone needs to be informed about the change
+**_api_** - used for dependencies that are exposed to external modules (transitive dependency). As the dependency is exposed to external modules, change would be a more significant re-compiling effort as everyone needs to be informed about the change
 
 **_implementation_** used for dependencies that are internal to the component (not transitive dependency)
 
