@@ -24,3 +24,7 @@ Gradle has two basic concepts: **projects** and **tasks**. A project can represe
 
 ### To see project dependency tree
 `./gradlew app:dependencies` 
+
+**_settings.gradle_** for settings that are build related & not necessarily project related, has access to _Gradle_ delegate object
+
+**_gradle.properties_** project wide gradle settings, allows simple key-value storage in the form of strings, automatically included in the scope of the _Project_ object
