@@ -10,21 +10,21 @@ Gradle has two basic concepts: **projects** and **tasks**. A project can represe
 
 **Task** represents some atomic piece of work which a build performs e.g. compiling classes, create a JAR, generate javadoc or publish some archive to a repository.
 
-**_api_** - used for dependencies that are exposed to external modules (transitive dependency). As the dependency is exposed to external modules, change would be a more significant re-compiling effort as everyone needs to be informed about the change
-
-**_implementation_** used for dependencies that are internal to the component (not transitive dependency)
-
-**_testImplementation_** used for dependencies that are required to compile and run the test source of the project
-
-**_compileOnly_** used for dependencies required at compile time but never required at runtime e.g. source-only annotations. They won't be included on the runtime classpath and are non-transitive i.e. they are not exposed externally
-
 `apply plugin:` is used for plugins using an id
 
 `apply from:` is used for plugins from a path to a local file system or a URL to a remote location. It calls the script directly as if it was part of the build file 
 
+**_api_** - used for dependencies that are exposed to external modules (transitive dependency). As the dependency is exposed to external modules, change would be a more significant re-compiling effort as everyone needs to be informed about the change
+
+**_implementation_** - used for dependencies that are internal to the component (not transitive dependency)
+
+**_testImplementation_** - used for dependencies that are required to compile and run the test source of the project
+
+**_compileOnly_** - used for dependencies required at compile time but never required at runtime e.g. source-only annotations. They won't be included on the runtime classpath and are non-transitive i.e. they are not exposed externally
+
+**_settings.gradle_** - for settings that are build related & not necessarily project related, has access to _Gradle_ delegate object
+
+**_gradle.properties_** - used for project wide gradle settings, allows simple key-value storage in the form of strings, automatically included in the scope of the _Project_ object
+
 ### To see project dependency tree
 `./gradlew app:dependencies` 
-
-**_settings.gradle_** for settings that are build related & not necessarily project related, has access to _Gradle_ delegate object
-
-**_gradle.properties_** project wide gradle settings, allows simple key-value storage in the form of strings, automatically included in the scope of the _Project_ object
