@@ -1,3 +1,11 @@
+Gradle scripts are _configuration_ scripts that when executes configures an object of a particular type e.g. a build script executes and configures an object of type **_Project_**. This object is called _delegate object_ of the script.
+
+A build script is made up of zero or more statements (method calls, assignments, variables) and _script blocks_ (e.g. allprojects{}, dependencies{}, artifacts{})
+
+**Script Block** is a method call that takes a closure as an argument.
+
+**Closure** is a standalone block of code which can take arguments, return values and assigned to a variable. The real value of closures is an ability to pass closure to different methods.
+
 Gradle has two basic concepts: **projects** and **tasks**. A project can represent a library, web application or a thing to be deployed to staging/production. It is not necessarily always representing something that is built. 
 
 **Task** represents some atomic piece of work which a build performs e.g. compiling classes, create a JAR, generate javadoc or publish some archive to a repository.
