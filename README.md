@@ -18,5 +18,9 @@ Gradle has two basic concepts: **projects** and **tasks**. A project can represe
 
 **_compileOnly_** used for dependencies required at compile time but never required at runtime e.g. source-only annotations. They won't be included on the runtime classpath and are non-transitive i.e. they are not exposed externally
 
+`apply plugin:` is used for plugins using an id
+
+`apply from:` is used for plugins from a path to a local file system or a URL to a remote location. It calls the script directly as if it was part of the build file 
+
 ### To see project dependency tree
 `./gradlew app:dependencies` 
