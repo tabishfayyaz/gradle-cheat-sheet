@@ -26,5 +26,7 @@ Gradle has two basic concepts: **projects** and **tasks**. A project can represe
 
 **_gradle.properties_** - used for project wide gradle settings, allows simple key-value storage in the form of strings, automatically included in the scope of the _Project_ object
 
+**_ext_** - used to define extra properties for _Project_ object, shorthand for `project.ext`
+
 ### To see project dependency tree
 `./gradlew app:dependencies` 
