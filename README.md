@@ -30,3 +30,7 @@ Gradle has two basic concepts: **projects** and **tasks**. A project can represe
 
 ### To see project dependency tree
 `./gradlew app:dependencies` 
+
+### Resources
+
+- Gradle Tutorial https://www.vogella.com/tutorials/GradleTutorial/article.html
