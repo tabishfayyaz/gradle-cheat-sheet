@@ -34,3 +34,4 @@ Gradle has two basic concepts: **projects** and **tasks**. A project can represe
 ### Resources
 
 - Gradle Tutorial https://www.vogella.com/tutorials/GradleTutorial/article.html
+- https://tomgregory.com/gradle-implementation-vs-compile-dependencies/ (good explanation of compileOnly vs implementation vs runtimeOnly)
